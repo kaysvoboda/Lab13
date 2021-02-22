@@ -9,3 +9,4 @@ namespace Lab_13a
         public abstract string Name();
         public abstract RPS GenerateRPS();
     }
+}
