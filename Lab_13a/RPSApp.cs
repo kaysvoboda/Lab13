@@ -9,7 +9,7 @@ namespace Lab_13a
     {
         public string CreatePlayer()
         {
-            var humanPlayer = new HumanPlayer();
+            //Player humanPlayer = new HumanPlayer();
 
             //Console.Write("Would you like to play against the Warrior or the Beast? Please type 'warrior' or 'beast': ");
             //string opponent = Console.ReadLine();
@@ -22,7 +22,7 @@ namespace Lab_13a
                 if ((opponent.ToLower() != "warrior" && opponent.ToLower() != "beast"))
 
                 {
-                    Console.WriteLine("Invalid response. Please enter either 'warrior' or 'beast': ");
+                    Console.WriteLine("Invalid response. Please enter either 'warrior' or 'beast'.");
                 }
                 else return opponent;
             }
@@ -31,10 +31,10 @@ namespace Lab_13a
 
         public RPS ChooseOpponent(string opponent)
         {
-            var randomPlayer = new RandomPlayer();
+            Player randomPlayer = new RandomPlayer();
             RPS randomThrow = randomPlayer.GenerateRPS();
 
-            var rockPlayer = new RockPlayer();
+            Player rockPlayer = new RockPlayer();
             RPS rockThrow = rockPlayer.GenerateRPS();
 
 

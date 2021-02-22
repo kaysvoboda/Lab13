@@ -17,6 +17,5 @@ namespace Lab_13a
         {
             return  RPS.rock;
         }
-
     }
 }

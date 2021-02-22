@@ -10,7 +10,6 @@ namespace Lab_13a
         {
             return "Beast";
         }
-
         public override RPS GenerateRPS()
         {
             var random = new Random();

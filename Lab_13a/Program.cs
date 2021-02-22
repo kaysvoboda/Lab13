@@ -5,18 +5,17 @@ namespace Lab_13a
     class Program
     {
         static void Main(string[] args)
-        {
-           var player = new HumanPlayer();
-           var opponent = new RPSApp();
-           string continueInput = null;
+        {      
+            var opponent = new RPSApp();
+            string continueInput;
 
-           Console.WriteLine("Welcome to Rock, Paper, Scissors!");
-            var humanPlayer = new HumanPlayer();
+            Console.WriteLine("Welcome to Rock, Paper, Scissors!");
+
+            Player humanPlayer = new HumanPlayer();
             string humanName = humanPlayer.Name();
 
             do
             { 
-
                 RPS humanThrow = humanPlayer.GenerateRPS();
                 string opponentName = opponent.CreatePlayer();
                 RPS opponentThrow = opponent.ChooseOpponent(opponentName);
@@ -40,10 +39,8 @@ namespace Lab_13a
                 }
                 else 
                     Console.WriteLine($"{humanName} Wins!");
-
-
-                Console.Write("Would you like to continue playing? (y/n): ");
-                 continueInput = Console.ReadLine();
+                    Console.Write("Would you like to continue playing? (y/n): ");
+                    continueInput = Console.ReadLine();
 
             } while (continueInput == "y");
         } 
