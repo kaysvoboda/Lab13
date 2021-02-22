@@ -9,11 +9,6 @@ namespace Lab_13a
     {
         public string CreatePlayer()
         {
-            //Player humanPlayer = new HumanPlayer();
-
-            //Console.Write("Would you like to play against the Warrior or the Beast? Please type 'warrior' or 'beast': ");
-            //string opponent = Console.ReadLine();
-
             while (true)
             {
                 Console.Write("Would you like to play against the Warrior or the Beast? Please type 'warrior' or 'beast': ");
